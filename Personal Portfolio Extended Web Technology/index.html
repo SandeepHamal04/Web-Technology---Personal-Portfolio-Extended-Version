@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body data-page="home">
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand-badge">SH</span>
+        <span>Sandeep Hamal</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="projects.html" data-page="projects">Projects</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<section class="section">
+  <div class="card">
+    <p class="muted">Hi, I’m</p>
+    <h1>Sandeep Hamal</h1>
+    <p class="muted">Thank you for visiting my Web Technology assessment portfolio.</p>
+    <p class="muted">I am a aspiring software developer focusing on building user-friendly web applications.</p>
+    <div class="row" style="margin-top:12px">
+      <a class="btn btn-primary" href="projects.html">View Projects</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider" aria-label="Web Technology Image Slider">
+      <div class="slider-viewport">
+        <div class="slider-track">
+          <!-- 1) CSS + JavaScript + HTML -->
+          <img class="slide" src="images/slider_1.webp" alt="CSS HTML JavaScript on laptop illustration" />
+          <!-- 2) Web Technology diagram -->
+          <img class="slide" src="images/slider_2.png" alt="Web Technology concepts diagram" />
+          <!-- 3) Laptop while writing code -->
+          <img class="slide" src="images/slider_3.jpg" alt="Laptop while writing code" />
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="btn" type="button" data-slider="prev" aria-label="Previous slide">Prev</button>
+        <div class="slider-dots" aria-label="Slide dots"></div>
+        <button class="btn" type="button" data-slider="next" aria-label="Next slide">Next</button>
+      </div>
+    </div>
+    <!-- End Slider -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid">
+    <div class="card">
+      <h2>What I’m learning</h2>
+      <p class="muted">HTML structure, CSS styling, and JavaScript basics.</p>
+      <p class="muted"></p>
+    </div>
+    <div class="card">
+      <h2>Quick Links</h2>
+      <p class="muted"><a href="about.html">About</a> • <a href="skills.html">Skills</a> • <a href="projects.html">Projects</a></p>
+      <p class="muted">Try the inventory app and weekly consolidate task.</p>
+    </div>
+  </div>
+</section>
+
+    <div class="footer">
+      <div class="row">
+        <span>© 2026 Sandeep Hamal</span>
+        <span>•</span>
+        <a href="projects.html">Projects</a>
+        <span>•</span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

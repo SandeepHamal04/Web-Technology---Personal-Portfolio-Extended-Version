@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body data-page="projects">
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand-badge">SH</span>
+        <span>Sandeep Hamal</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="skills.html" data-page="skills">Skills</a>
+        <a href="projects.html" data-page="projects">Projects</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions"></div>
+    </div>
+  </header>
+
+  <main class="container">
+
+<section class="section">
+  <div class="card">
+    <h1>Inventory Management System</h1>
+    <p class="muted">
+      Inventory Management System: Add items with quantity and location, search items, and delete items.
+    </p>
+
+    <div class="grid" style="margin-top:14px">
+      <div class="card">
+        <h2>Add Item</h2>
+
+        <label>
+          <span>Item Name</span>
+          <input id="itemName" type="text" placeholder="e.g., Laptop" />
+        </label>
+
+        <div class="grid">
+          <label>
+            <span>Quantity</span>
+            <input id="quantity" type="number" min="1" value="1" />
+          </label>
+
+          <label>
+            <span>Location</span>
+            <input id="location" type="text" placeholder="e.g., Table 1" />
+          </label>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <button class="btn btn-primary" id="addBtn" type="button">Add Item</button>
+          <button class="btn" id="resetBtn" type="button">Reset</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Search</h2>
+        <label>
+          <span>Search items</span>
+          <input id="searchInput" type="text" placeholder="Type to search..." />
+        </label>
+        <p class="muted"><strong>Total items:</strong> <span id="totalItems">0</span></p>
+
+        <h2 style="margin-top:16px">Item List</h2>
+        <p id="emptyMsg" class="muted">No items yet. Add your item on the left.</p>
+
+        <div style="overflow:auto; border:1px solid var(--border); border-radius:14px;">
+          <table style="width:100%; border-collapse:collapse; background:#fff;">
+            <thead>
+              <tr style="background:#f3f4f6;">
+                <th style="text-align:left; padding:10px; border-bottom:1px solid var(--border);">Name</th>
+                <th style="text-align:left; padding:10px; border-bottom:1px solid var(--border);">Qty</th>
+                <th style="text-align:left; padding:10px; border-bottom:1px solid var(--border);">Location</th>
+                <th style="text-align:left; padding:10px; border-bottom:1px solid var(--border);">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+      <div class="row">
+        <span>© 2026 Sandeep Hamal</span>
+        <span>•</span>
+        <a href="projects.html">Projects</a>
+        <span>•</span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </main>
+<script src="inventory.js"></script>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
